@@ -170,7 +170,7 @@ img {
   background-color: var(--primary);
 }
 
-.btn--secondary {
+.btn--outline {
   border: 2px solid var(--primary);
 }
 
