@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url(./components/reset.css);
 
 :root {
   --bg-color: #07010a;
@@ -32,10 +28,6 @@ h5 {
 
 button {
   font-family: "Montserrat", sans-serif;
-}
-
-ul {
-  list-style: none;
 }
 
 a {
