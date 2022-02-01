@@ -1,11 +1,10 @@
-@import url(./components/reset.css);
-
 :root {
   --bg-color: #07010a;
   /* --bg-color: #040005; */
   --font-color: #ffffffd0;
   --white: #fff;
   --black: #0d0d0d;
+  --grey: #474747;
   --primary: #6f00ed;
   --secondary: #db0b5f;
 
@@ -39,12 +38,19 @@ img {
   max-width: 100%;
 }
 
+.width-90 {
+  width: 90%;
+}
+
 /* 
   text and spacing utils delete/modify this section 
   after merging text-utils-and-lists branch 
 */
 .ta-center {
   text-align: center;
+}
+.text-white {
+  color: var(--white);
 }
 /* 16px */
 .text-base {
@@ -73,6 +79,12 @@ img {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.ml-sm {
+  margin-left: 1rem;
+}
+.ml-md {
+  margin-left: 1.5rem;
+}
 .ml-lg {
   margin-left: 2rem;
 }
@@ -88,21 +100,13 @@ img {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-/* spacing and text utils end */
-
-.container {
-  width: 90%;
-  max-width: 120rem;
-  min-height: 100vh;
-
-  display: grid;
-  grid-template-rows: auto 1fr 1fr;
-  grid-template-areas:
-    "header"
-    "image"
-    "main";
-  align-items: center;
+.pl-sm {
+  padding-left: 1rem;
 }
+.pl-md {
+  padding-left: 1.5rem;
+}
+/* spacing and text utils end */
 
 /* header */
 .logo {
@@ -113,8 +117,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  grid-area: header;
 }
 
 .header__nav > ul {
@@ -133,37 +135,17 @@ img {
 .light-mode:hover {
   color: var(--white);
   cursor: pointer;
+  font-weight: 500;
 }
 
-/* main */
-.main__img {
-  width: 50%;
-  grid-area: image;
+.header .fa-github,
+.header .fa-sun,
+.header .fa-moon {
+  font-size: 1.5rem;
 }
 
-.main {
-  max-width: 45rem;
-  align-self: start;
-  grid-area: main;
-}
-
-.btn {
-  cursor: pointer;
-  border-radius: 10px;
-  color: var(--white);
-}
-
-.btn:hover {
-  opacity: 0.9;
-}
-
-.btn--primary {
-  border: none;
-  background-color: var(--primary);
-}
-
-.btn--outline {
-  border: 2px solid var(--primary);
+.header .fa-github {
+  border-left: 1px solid var(--grey);
 }
 
 /* footer */
@@ -184,37 +166,10 @@ img {
   }
 }
 
-/* larger than 640px */
-@media only screen and (min-width: 40em) {
-  .container {
-    grid-template-columns: 1.25fr 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-      "header header"
-      "main   image";
-  }
-  .main__img {
-    width: 100%;
-  }
-  .main {
-    align-self: center;
-  }
-}
-
 /* larger than 768px */
 @media only screen and (min-width: 48em) {
   :root {
     font-size: 100%;
-  }
-  .container {
-    grid-template-columns: 1.5fr 1fr;
-  }
-}
-
-/* larger than 1024px */
-@media only screen and (min-width: 64em) {
-  .container {
-    grid-template-columns: 2fr 1fr;
   }
 }
 

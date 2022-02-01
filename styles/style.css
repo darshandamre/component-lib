@@ -1,0 +1,82 @@
+@import url(../components/reset.css);
+@import url(./global.css);
+
+.container {
+  max-width: 120rem;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-areas:
+    "header"
+    "image"
+    "main";
+  align-items: center;
+}
+
+/* header */
+.header {
+  grid-area: header;
+}
+
+/* main */
+.main__img {
+  width: 50%;
+  grid-area: image;
+}
+
+.main {
+  max-width: 45rem;
+  align-self: start;
+  grid-area: main;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 10px;
+  color: var(--white);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn--primary {
+  border: none;
+  background-color: var(--primary);
+}
+
+.btn--outline {
+  border: 2px solid var(--primary);
+}
+
+/* larger than 640px */
+@media only screen and (min-width: 40em) {
+  .container {
+    grid-template-columns: 1.25fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "header header"
+      "main   image";
+  }
+  .main__img {
+    width: 100%;
+  }
+  .main {
+    align-self: center;
+  }
+}
+
+/* larger than 768px */
+@media only screen and (min-width: 48em) {
+  .container {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+/* larger than 1024px */
+@media only screen and (min-width: 64em) {
+  .container {
+    grid-template-columns: 2fr 1fr;
+  }
+}
