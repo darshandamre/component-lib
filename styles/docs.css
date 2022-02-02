@@ -2,11 +2,11 @@
 @import url(./global.css);
 @import url(../components/avatar.css);
 
-/* layout */
+/************** layout ****************/
 body {
   display: grid;
 
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto minmax(0, 1fr);
   grid-template-areas:
     "header  header"
     "sidebar main";
@@ -26,20 +26,44 @@ body {
   grid-area: main;
 }
 
-/* text */
+/*********** text ****************/
 .text-highlight {
-  color: #f4ce2c;
+  color: var(--yellow-code);
   /* color: #a6ce28; */
   /* color: #9c73ff; */
 }
 
+/*********** code snippets **************/
+.code-snippet__wrapper {
+  position: relative;
+}
+.btn--copy {
+  background-color: inherit;
+  color: var(--font-color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+.code-snippet__wrapper:hover > .btn--copy {
+  display: block;
+}
 .code-snippet {
   background-color: var(--black);
+  border-radius: 15px;
   overflow: auto;
-}
 
-.code-snippet > pre {
-  overflow: auto;
-  word-break: normal;
-  word-wrap: normal;
+  display: flex;
+  align-items: center;
 }
+.tags {
+  color: var(--blue-code);
+}
+.attribute {
+  color: var(--white-code);
+}
+.value {
+  color: var(--yellow-code);
+}
+/************************************/

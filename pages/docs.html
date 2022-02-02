@@ -42,7 +42,7 @@
         </ul>
       </nav>
     </header>
-    <aside class="sidebar text-base">
+    <aside class="sidebar text-base pl-md">
       <h3 class="text-md">Components</h3>
       <ul>
         <li><a href="#avatar">Avatar</a></li>
@@ -57,7 +57,7 @@
         <li><a href="#lists">Lists</a></li>
       </ul>
     </aside>
-    <main class="main text-base">
+    <main class="main text-base width-90 mx-auto">
       <section>
         <h2 id="avatar" class="text-lg fw-500">Avatar</h2>
         <p>
@@ -86,14 +86,38 @@
             alt="avatar"
           />
         </div>
-
-        <div class="code-snippet">
-          <pre>
-            &lt;img class="avatar"
-            src="https://pbs.twimg.com/profile_images/1310736373247139840/hentCEA2_400x400.jpg"
-            alt="avatar" /&gt;
-          </pre>
+        <div class="code-snippet__wrapper">
+          <button
+            class="btn--copy m-sm"
+            value='<img class="avatar" src="https://url-of-image.jpg" alt="avatar" />'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <code class="m-lg">
+              <span class="tags">&lt;img</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="attribute">src</span>=<span class="value"
+                >"https://url-of-image.jpg"</span
+              >
+              <span class="attribute">alt</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="tags">/&gt;</span>
+            </code>
+          </div>
         </div>
+        <h3 class="text-md">Sizes</h3>
+        <p>
+          Avatars are availbale in 3 different sizes. The default size is 3x3
+          rem (48x48 px). For smaller avatars, add class
+          <span class="text-highlight">avatar--sm</span> (2x2 rem or 32x32 px).
+          For larger avatars, add class
+          <span class="text-highlight">avatar--lg</span> (4.5x4.5 rem or
+          72x72px)
+        </p>
         <div>
           <img
             class="avatar avatar--lg"
@@ -111,6 +135,66 @@
             alt="avatar"
           />
         </div>
+        <div class="code-snippet__wrapper">
+          <button
+            class="btn--copy m-sm"
+            value='<img class="avatar avatar--lg" src="https://url-of-image1.jpg" alt="avatar" /> &#10;<img class="avatar" src="https://url-of-image2.jpg" alt="avatar" /> &#10;<img class="avatar avatar--sm" src="https://url-of-image3.jpg" alt="avatar" />'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <code class="m-lg">
+              <span class="tags">&lt;img</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"avatar avatar--lg"</span
+              >
+              <span class="attribute">src</span>=<span class="value"
+                >"https://url-of-image1.jpg"</span
+              >
+              <span class="attribute">alt</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="tags">/&gt;</span>
+              <!--  -->
+              <br />
+              <!--  -->
+              <span class="tags">&lt;img</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="attribute">src</span>=<span class="value"
+                >"https://url-of-image2.jpg"</span
+              >
+              <span class="attribute">alt</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="tags">/&gt;</span>
+              <!--  -->
+              <br />
+              <!--  -->
+              <span class="tags">&lt;img</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"avatar avatar--sm"</span
+              >
+              <span class="attribute">src</span>=<span class="value"
+                >"https://url-of-image3.jpg"</span
+              >
+              <span class="attribute">alt</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="tags">/&gt;</span>
+            </code>
+          </div>
+        </div>
+        <h3 class="text-md">Letter avatars</h3>
+        <p>
+          Letter avatars can be created by giving
+          <span class="text-highlight">avatar avatar--text</span> classes to a
+          div and having 1 or 2 letters inside that div. Large and small letter
+          avatars can be created by adding class
+          <span class="text-highlight">avatar--lg</span> and
+          <span class="text-highlight">avatar--sm</span> respectively
+        </p>
         <div>
           <div class="avatar avatar--text avatar--lg" role="img" alt="avatar">
             VM
@@ -120,7 +204,65 @@
             L
           </div>
         </div>
+        <div class="code-snippet__wrapper">
+          <button
+            class="btn--copy m-sm"
+            value='<div class="avatar avatar--text avatar--lg" role="img" alt="avatar" >VM</div> &#10;<div class="avatar avatar--text" role="img" alt="avatar" >TP</div> &#10;<div class="avatar avatar--text avatar--sm" role="img" alt="avatar" >L</div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <code class="m-lg">
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"avatar avatar--text avatar--lg"</span
+              >
+              <span class="attribute">role</span>=<span class="value"
+                >"img"</span
+              >
+              <span class="attribute">alt</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="tags">&gt;</span>VM<span class="tags"
+                >&lt;/div&gt;</span
+              >
+              <!--  -->
+              <br />
+              <!--  -->
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"avatar avatar--text"</span
+              >
+              <span class="attribute">role</span>=<span class="value"
+                >"img"</span
+              >
+              <span class="attribute">alt</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="tags">&gt;</span>TP<span class="tags"
+                >&lt;/div&gt;</span
+              >
+              <!--  -->
+              <br />
+              <!--  -->
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"avatar avatar--text avatar--sm"</span
+              >
+              <span class="attribute">role</span>=<span class="value"
+                >"img"</span
+              >
+              <span class="attribute">alt</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="tags">&gt;</span>L<span class="tags"
+                >&lt;/div&gt;</span
+              >
+            </code>
+          </div>
+        </div>
       </section>
     </main>
+    <script src="../js/docs.js"></script>
   </body>
 </html>

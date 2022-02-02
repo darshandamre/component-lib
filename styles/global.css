@@ -8,7 +8,14 @@
   --primary: #6f00ed;
   --secondary: #db0b5f;
 
+  /* color for code snippets */
+  --white-code: #fff;
+  --blue-code: #12b0e8;
+  --yellow-code: #f4ce2c;
+
   font-size: 75%;
+
+  color-scheme: dark; /* for dark scrollbar */
 }
 
 body {
@@ -81,6 +88,9 @@ img {
 .m-sm {
   margin: 1rem;
 }
+.m-lg {
+  margin: 2rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -97,6 +107,15 @@ img {
 }
 .ml-lg {
   margin-left: 2rem;
+}
+.mt-xl {
+  margin-top: 2.5rem;
+}
+.p-sm {
+  padding: 1rem;
+}
+.p-lg {
+  padding: 2rem;
 }
 .px-sm {
   padding-left: 1rem;
