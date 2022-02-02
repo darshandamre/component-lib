@@ -1,2 +1,45 @@
 @import url(../components/reset.css);
 @import url(./global.css);
+@import url(../components/avatar.css);
+
+/* layout */
+body {
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "header  header"
+    "sidebar main";
+
+  column-gap: 2rem;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main {
+  grid-area: main;
+}
+
+/* text */
+.text-highlight {
+  color: #f4ce2c;
+  /* color: #a6ce28; */
+  /* color: #9c73ff; */
+}
+
+.code-snippet {
+  background-color: var(--black);
+  overflow: auto;
+}
+
+.code-snippet > pre {
+  overflow: auto;
+  word-break: normal;
+  word-wrap: normal;
+}
