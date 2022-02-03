@@ -1,17 +1,21 @@
 :root {
   --bg-color: #07010a;
   /* --bg-color: #040005; */
-  --font-color: #ffffffd0;
+  --font-color: #ffffffbb;
   --white: #fff;
   --black: #0d0d0d;
-  --grey: #474747;
   --primary: #6f00ed;
   --secondary: #db0b5f;
 
+  --red: #e21717;
+  --yellow: #ddd101;
+  --green: #3dbe29;
+  --grey: #474747;
+
   /* color for code snippets */
-  --white-code: #fff;
+  --white-code: #ffffffcc;
   --blue-code: #12b0e8;
-  --yellow-code: #f4ce2c;
+  --yellow-code: #f4ce2ccc;
 
   font-size: 75%;
 
@@ -107,6 +111,12 @@ img {
 }
 .ml-lg {
   margin-left: 2rem;
+}
+.mr-md {
+  margin-right: 1.5rem;
+}
+.mt-xs {
+  margin-top: 0.5rem;
 }
 .mt-xl {
   margin-top: 2.5rem;

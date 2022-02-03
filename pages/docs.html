@@ -58,6 +58,7 @@
       </ul>
     </aside>
     <main class="main text-base width-90 mx-auto">
+      <!-- Avatar section -->
       <section>
         <h2 id="avatar" class="text-lg fw-500">Avatar</h2>
         <p>
@@ -207,7 +208,9 @@
         <div class="code-snippet__wrapper">
           <button
             class="btn--copy m-sm"
-            value='<div class="avatar avatar--text avatar--lg" role="img" alt="avatar" >VM</div> &#10;<div class="avatar avatar--text" role="img" alt="avatar" >TP</div> &#10;<div class="avatar avatar--text avatar--sm" role="img" alt="avatar" >L</div>'
+            value='<div class="avatar avatar--text avatar--lg" role="img" alt="avatar" >VM</div>
+            <div class="avatar avatar--text" role="img" alt="avatar" >TP</div>
+            <div class="avatar avatar--text avatar--sm" role="img" alt="avatar" >L</div>'
           >
             <i class="far fa-copy"></i>
           </button>
@@ -258,6 +261,276 @@
               <span class="tags">&gt;</span>L<span class="tags"
                 >&lt;/div&gt;</span
               >
+            </code>
+          </div>
+        </div>
+      </section>
+
+      <!-- Badge section -->
+      <section>
+        <h2 id="badge" class="text-lg fw-500">Badge</h2>
+        <p>
+          Badges are used to display status or count information to the user.
+        </p>
+        <h3 class="text-md">Badge on Avatars</h3>
+        <p>
+          Status badges can be created by the following way. The default color
+          is grey, you change the color to red, yellow or green by using the
+          examples given below.
+        </p>
+        <div>
+          <div class="badge-container">
+            <img
+              class="avatar"
+              src="https://pbs.twimg.com/profile_images/1310736373247139840/hentCEA2_400x400.jpg"
+              alt="avatar"
+            />
+            <span class="badge"></span>
+          </div>
+          <div class="badge-container">
+            <img
+              class="avatar"
+              src="https://pbs.twimg.com/profile_images/956331551435960322/OaqR8pAB_400x400.jpg"
+              alt="avatar"
+            />
+            <span class="badge badge--red"></span>
+          </div>
+          <div class="badge-container">
+            <img
+              class="avatar"
+              src="https://pbs.twimg.com/profile_images/1449982666284023808/mqacJu_f_400x400.jpg"
+              alt="avatar"
+            />
+            <span class="badge badge--yellow"></span>
+          </div>
+          <div class="badge-container">
+            <img
+              class="avatar"
+              src="https://pbs.twimg.com/profile_images/1449982666284023808/mqacJu_f_400x400.jpg"
+              alt="avatar"
+            />
+            <span class="badge badge--green"></span>
+          </div>
+        </div>
+        <div class="code-snippet__wrapper">
+          <button
+            class="btn--copy m-sm"
+            value='<div class="badge-container">
+                <img class="avatar" src="https://url-of-image1.jpg" alt="avatar" />
+                <span class="badge" ></span>
+              </div>
+              <div class="badge-container">
+                <img class="avatar" src="https://url-of-image2.jpg" alt="avatar" />
+                <span class="badge badge--red" ></span>
+              </div>
+              <div class="badge-container">
+                <img class="avatar" src="https://url-of-image3.jpg" alt="avatar" />
+                <span class="badge badge--yellow" ></span>
+              </div>
+              <div class="badge-container">
+                <img class="avatar" src="https://url-of-image3.jpg" alt="avatar" />
+                <span class="badge badge--green" ></span>
+              </div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <code class="m-lg">
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"badge-container"</span
+              ><span class="tags">&gt;</span>
+              <br />
+              &emsp;
+              <span class="tags">&lt;img</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="attribute">src</span>=<span class="value"
+                >"https://url-of-image1.jpg"</span
+              >
+              <span class="attribute">alt</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="tags">/&gt;</span>
+              <br />
+              &emsp;
+              <span class="tags">&lt;span</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"badge"</span
+              >
+              <span class="tags">&gt;&lt;/span&gt;</span>
+              <br />
+              <span class="tags">&lt;/div&gt;</span>
+              <!--  -->
+              <br />
+              <!--  -->
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"badge-container"</span
+              ><span class="tags">&gt;</span>
+              <br />
+              &emsp;
+              <span class="tags">&lt;img</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="attribute">src</span>=<span class="value"
+                >"https://url-of-image2.jpg"</span
+              >
+              <span class="attribute">alt</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="tags">/&gt;</span>
+              <br />
+              &emsp;
+              <span class="tags">&lt;span</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"badge badge--red"</span
+              >
+              <span class="tags">&gt;&lt;/span&gt;</span>
+              <br />
+              <span class="tags">&lt;/div&gt;</span>
+              <!--  -->
+              <br />
+              <!--  -->
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"badge-container"</span
+              ><span class="tags">&gt;</span>
+              <br />
+              &emsp;
+              <span class="tags">&lt;img</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="attribute">src</span>=<span class="value"
+                >"https://url-of-image3.jpg"</span
+              >
+              <span class="attribute">alt</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="tags">/&gt;</span>
+              <br />
+              &emsp;
+              <span class="tags">&lt;span</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"badge badge--yellow"</span
+              >
+              <span class="tags">&gt;&lt;/span&gt;</span>
+              <br />
+              <span class="tags">&lt;/div&gt;</span>
+              <!--  -->
+              <br />
+              <!--  -->
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"badge-container"</span
+              ><span class="tags">&gt;</span>
+              <br />
+              &emsp;
+              <span class="tags">&lt;img</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="attribute">src</span>=<span class="value"
+                >"https://url-of-image3.jpg"</span
+              >
+              <span class="attribute">alt</span>=<span class="value"
+                >"avatar"</span
+              >
+              <span class="tags">/&gt;</span>
+              <br />
+              &emsp;
+              <span class="tags">&lt;span</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"badge badge--green"</span
+              >
+              <span class="tags">&gt;&lt;/span&gt;</span>
+              <br />
+              <span class="tags">&lt;/div&gt;</span>
+            </code>
+          </div>
+        </div>
+        <h3 class="text-md">Badge on Icons</h3>
+        <p>
+          Badge on icons can be used to show the number of messages or items in
+          cart. The above colors can be used with badge on icons in the same
+          way. Default backgound color is blue.
+        </p>
+        <div>
+          <div class="badge-container">
+            <i class="fas fa-shopping-cart fa-2x"></i>
+            <span class="badge-on-icon badge--green">4</span>
+          </div>
+          <div class="badge-container">
+            <i class="far fa-envelope fa-2x"></i>
+            <span class="badge-on-icon">99+</span>
+          </div>
+        </div>
+        <div class="code-snippet__wrapper">
+          <button
+            class="btn--copy m-sm"
+            value='<div class="badge-container">
+                <i class="fas fa-shopping-cart fa-2x" ></i>
+                <span class="badge-on-icon badge--green" >4</span>
+              </div>
+              <div class="badge-container">
+                <i class="far fa-envelope fa-2x" ></i>
+                <span class="badge-on-icon" >99+</span>
+              </div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <code class="m-lg">
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"badge-container"</span
+              ><span class="tags">&gt;</span>
+              <br />
+              &emsp;
+              <span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"fas fa-shopping-cart fa-2x"</span
+              >
+              <span class="tags">&gt;&lt;/i&gt;</span>
+              <br />
+              &emsp;
+              <span class="tags">&lt;span</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"badge-on-icon badge--green"</span
+              >
+              <span class="tags">&gt;</span>4<span class="tags"
+                >&lt;/span&gt;</span
+              >
+              <br />
+              <span class="tags">&lt;/div&gt;</span>
+              <!--  -->
+              <br />
+              <!--  -->
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"badge-container"</span
+              ><span class="tags">&gt;</span>
+              <br />
+              &emsp;
+              <span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"far fa-envelope fa-2x"</span
+              >
+              <span class="tags">&gt;&lt;/i&gt;</span>
+              <br />
+              &emsp;
+              <span class="tags">&lt;span</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"badge-on-icon"</span
+              >
+              <span class="tags">&gt;</span>99+<span class="tags"
+                >&lt;/span&gt;</span
+              >
+              <br />
+              <span class="tags">&lt;/div&gt;</span>
             </code>
           </div>
         </div>

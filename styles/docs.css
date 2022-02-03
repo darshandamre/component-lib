@@ -1,6 +1,7 @@
 @import url(../components/reset.css);
 @import url(./global.css);
 @import url(../components/avatar.css);
+@import url(../components/badge.css);
 
 /************** layout ****************/
 body {
@@ -52,10 +53,11 @@ body {
 .code-snippet {
   background-color: var(--black);
   border-radius: 15px;
+  max-height: 20rem;
   overflow: auto;
 
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 .tags {
   color: var(--blue-code);
