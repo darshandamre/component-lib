@@ -5,7 +5,13 @@
   --white: #fff;
   --black: #0d0d0d;
   --primary: #6f00ed;
-  --secondary: #db0b5f;
+  --secondary: #433df2;
+
+  --primary-light: #9233ff;
+  --primary-extra-light: #9233ff4d;
+
+  --secondary-light: #544ff3;
+  --secondary-extra-light: #544ff360;
 
   --red: #e21717;
   --yellow: #ddd101;

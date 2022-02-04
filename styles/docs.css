@@ -1,7 +1,8 @@
-@import url(../components/reset.css);
-@import url(./global.css);
-@import url(../components/avatar.css);
-@import url(../components/badge.css);
+@import "../components/reset.css";
+@import "./global.css";
+@import "../components/avatar.css";
+@import "../components/badge.css";
+@import "../components/button.css";
 
 /************** layout ****************/
 body {
@@ -33,8 +34,7 @@ body {
 }
 
 /******** component displays *********/
-.display-avatar,
-.display-badge {
+.display-card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,12 +43,20 @@ body {
   border-radius: 15px;
 
   margin: 1.5rem auto;
+  padding: 1rem 0;
 }
 
-.display-avatar > img,
-.display-avatar > div,
-.display-badge > div {
+.display-card-btn {
+  flex-direction: column;
+}
+
+.display-card > img,
+.display-card > div {
   margin: 1rem;
+}
+
+.btn--floating {
+  position: static;
 }
 
 /*********** code snippets **************/
@@ -71,7 +79,7 @@ body {
 .code-snippet {
   background-color: var(--black);
   border-radius: 15px;
-  max-height: 20rem;
+  /* max-height: 20rem; */
   overflow: auto;
 
   display: flex;
