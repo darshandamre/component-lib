@@ -13,6 +13,13 @@
   font-size: 1.5rem;
 }
 
+.alert__close {
+  margin-left: auto;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 .alert--info {
   color: var(--info);
   background: var(--info-bg);
