@@ -1,14 +1,25 @@
 :root {
   --bg-color: #07010a;
   /* --bg-color: #040005; */
-  --font-color: #ffffffd0;
+  --font-color: #ffffffbb;
   --white: #fff;
   --black: #0d0d0d;
-  --grey: #474747;
   --primary: #6f00ed;
   --secondary: #db0b5f;
 
+  --red: #e21717;
+  --yellow: #ddd101;
+  --green: #3dbe29;
+  --grey: #474747;
+
+  /* color for code snippets */
+  --white-code: #ffffffcc;
+  --blue-code: #12b0e8;
+  --yellow-code: #f4ce2ccc;
+
   font-size: 75%;
+
+  color-scheme: dark; /* for dark scrollbar */
 }
 
 body {
@@ -41,6 +52,9 @@ img {
 .width-90 {
   width: 90%;
 }
+.width-80 {
+  width: 80%;
+}
 
 /* 
   text and spacing utils delete/modify this section 
@@ -57,6 +71,16 @@ img {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+/* 24px */
+.text-md {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+/* 32px */
+.text-lg {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
 /* 48px */
 .text-xl {
   font-size: 3rem;
@@ -71,9 +95,20 @@ img {
 .m-sm {
   margin: 1rem;
 }
+.m-lg {
+  margin: 2rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.my-xs {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.my-sm {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .my-lg {
   margin-top: 2rem;
@@ -87,6 +122,59 @@ img {
 }
 .ml-lg {
   margin-left: 2rem;
+}
+.mr-md {
+  margin-right: 1.5rem;
+}
+/* margin-top */
+.mt-0 {
+  margin-top: 0;
+}
+.mt-xs {
+  margin-top: 0.5rem;
+}
+.mt-sm {
+  margin-top: 1rem;
+}
+.mt-md {
+  margin-top: 1.5rem;
+}
+.mt-lg {
+  margin-top: 2rem;
+}
+.mt-xl {
+  margin-top: 2.5rem;
+}
+.mt-xxl {
+  margin-top: 4rem;
+}
+/* margin-bottom */
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-xs {
+  margin-bottom: 0.5rem;
+}
+.mb-sm {
+  margin-bottom: 1rem;
+}
+.mb-md {
+  margin-bottom: 1.5rem;
+}
+.mb-lg {
+  margin-bottom: 2rem;
+}
+.mb-xl {
+  margin-bottom: 2.5rem;
+}
+.mb-xxl {
+  margin-bottom: 4rem;
+}
+.p-sm {
+  padding: 1rem;
+}
+.p-lg {
+  padding: 2rem;
 }
 .px-sm {
   padding-left: 1rem;
