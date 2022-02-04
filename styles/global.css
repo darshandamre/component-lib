@@ -13,15 +13,24 @@
   --secondary-light: #544ff3;
   --secondary-extra-light: #544ff360;
 
+  /* color for code snippets */
+  --white-code: #ffffffcc;
+  --blue-code: #12b0e8;
+  --yellow-code: #f4ce2ccc;
+
   --red: #e21717;
   --yellow: #ddd101;
   --green: #3dbe29;
   --grey: #474747;
 
-  /* color for code snippets */
-  --white-code: #ffffffcc;
-  --blue-code: #12b0e8;
-  --yellow-code: #f4ce2ccc;
+  --info: var(--blue-code);
+  --info-bg: #12b0e812;
+  --success: var(--green);
+  --success-bg: #3dbe2919;
+  --warning: var(--yellow);
+  --warning-bg: #ddd10111;
+  --error: #ff0000;
+  --error-bg: #ff00000d;
 
   font-size: 75%;
 

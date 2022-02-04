@@ -3,6 +3,7 @@
 @import "../components/avatar.css";
 @import "../components/badge.css";
 @import "../components/button.css";
+@import "../components/alert.css";
 
 /************** layout ****************/
 body {
@@ -48,6 +49,10 @@ body {
 
 .display-card-btn {
   flex-direction: column;
+}
+
+.display-card--alert {
+  display: block;
 }
 
 .display-card > img,

@@ -1,0 +1,38 @@
+.alert {
+  margin: 1rem;
+  padding: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+}
+
+.alert__icon {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.alert--info {
+  color: var(--info);
+  background: var(--info-bg);
+  border: 2px solid var(--info);
+}
+
+.alert--success {
+  color: var(--success);
+  background: var(--success-bg);
+  border: 2px solid var(--success);
+}
+
+.alert--warning {
+  color: var(--warning);
+  background: var(--warning-bg);
+  border: 2px solid var(--warning);
+}
+
+.alert--error {
+  color: var(--error);
+  background: var(--error-bg);
+  border: 2px solid var(--error);
+}
