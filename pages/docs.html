@@ -70,7 +70,7 @@
           Image avatars can be created by giving the class name as
           <span class="text-highlight">avatar</span> to an image.
         </p>
-        <div class="display-avatar">
+        <div class="display-card">
           <img
             class="avatar"
             src="https://pbs.twimg.com/profile_images/1310736373247139840/hentCEA2_400x400.jpg"
@@ -119,7 +119,7 @@
           <span class="text-highlight">avatar--lg</span> (4.5x4.5 rem or
           72x72px)
         </p>
-        <div class="display-avatar">
+        <div class="display-card">
           <img
             class="avatar avatar--lg"
             src="https://pbs.twimg.com/profile_images/1310736373247139840/hentCEA2_400x400.jpg"
@@ -196,7 +196,7 @@
           <span class="text-highlight">avatar--lg</span> and
           <span class="text-highlight">avatar--sm</span> respectively
         </p>
-        <div class="display-avatar">
+        <div class="display-card">
           <div class="avatar avatar--text avatar--lg" role="img" alt="avatar">
             VM
           </div>
@@ -266,6 +266,231 @@
         </div>
       </section>
 
+      <!-- Alert section -->
+      <section>
+        <h2 id="alert" class="text-lg fw-500 mt-sm mb-xs">Alert</h2>
+        <p class="my-xs">
+          Alert component can be used in 4 different colors and it can be used
+          with a close icon as well.
+        </p>
+        <h3 class="text-md mt-md mb-xs">Simple alerts</h3>
+        <p class="my-xs">
+          To create an alert use the class
+          <span class="text-highlight">alert</span>, and add any one of the
+          following classes for different variations:
+          <span class="text-highlight">alert--info</span>,
+          <span class="text-highlight">alert--success</span>,
+          <span class="text-highlight">alert--warning</span>, and
+          <span class="text-highlight">alert--error</span>.
+        </p>
+        <div class="display-card display-card--alert">
+          <div class="alert alert--info">
+            <i class="alert__icon fas fa-info-circle"></i>
+            <p>This is an info alert</p>
+          </div>
+          <div class="alert alert--success">
+            <i class="alert__icon far fa-check-circle"></i>
+            <p>This is a success alert</p>
+          </div>
+          <div class="alert alert--warning">
+            <i class="alert__icon fas fa-exclamation-triangle"></i>
+            <p>This is a warning alert</p>
+          </div>
+          <div class="alert alert--error">
+            <i class="alert__icon fas fa-exclamation-circle"></i>
+            <p>This is an error alert</p>
+          </div>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<div class="alert alert--info">
+  <i class="alert__icon fas fa-info-circle"></i>
+  <p>This is an info alert</p>
+</div>
+<div class="alert alert--success">
+  <i class="alert__icon far fa-check-circle"></i>
+  <p>This is a success alert</p>
+</div>
+<div class="alert alert--warning">
+  <i class="alert__icon fas fa-exclamation-triangle"></i>
+  <p>This is a warning alert</p>
+</div>
+<div class="alert alert--error">
+  <i class="alert__icon fas fa-exclamation-circle"></i>
+  <p>This is an error alert</p>
+</div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <code class="m-lg">
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert alert--info"</span
+              ><span class="tags">&gt;</span><br />
+              &emsp;<span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert__icon fas fa-info-circle"</span
+              ><span class="tags">&gt;&lt;/i&gt;</span><br />
+              &emsp;<span class="tags">&lt;p&gt;</span>This is an info
+              alert<span class="tags">&lt;/p&gt;</span><br />
+              <span class="tags">&lt;/div&gt;</span><br />
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert alert--success"</span
+              ><span class="tags">&gt;</span><br />
+              &emsp;<span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert__icon far fa-check-circle"</span
+              ><span class="tags">&gt;&lt;/i&gt;</span><br />
+              &emsp;<span class="tags">&lt;p&gt;</span>This is a success
+              alert<span class="tags">&lt;/p&gt;</span><br />
+              <span class="tags">&lt;/div&gt;</span><br />
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert alert--warning"</span
+              ><span class="tags">&gt;</span><br />
+              &emsp;<span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert__icon fas fa-exclamation-triangle"</span
+              ><span class="tags">&gt;&lt;/i&gt;</span><br />
+              &emsp;<span class="tags">&lt;p&gt;</span>This is a warning
+              alert<span class="tags">&lt;/p&gt;</span><br />
+              <span class="tags">&lt;/div&gt;</span><br />
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert alert--error"</span
+              ><span class="tags">&gt;</span><br />
+              &emsp;<span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert__icon fas fa-exclamation-circle"</span
+              ><span class="tags">&gt;&lt;/i&gt;</span><br />
+              &emsp;<span class="tags">&lt;p&gt;</span>This is an error
+              alert<span class="tags">&lt;/p&gt;</span><br />
+              <span class="tags">&lt;/div&gt;</span>
+            </code>
+          </div>
+        </div>
+        <h3 class="text-md mt-md mb-xs">Alerts with close icon</h3>
+        <p class="my-xs">
+          alerts with close icon can be created in the following way.
+        </p>
+        <div class="display-card display-card--alert">
+          <div class="alert alert--info">
+            <i class="alert__icon fas fa-info-circle"></i>
+            <p>This is an info alert</p>
+            <i class="alert__close fas fa-times"></i>
+          </div>
+          <div class="alert alert--success">
+            <i class="alert__icon far fa-check-circle"></i>
+            <p>This is a success alert</p>
+            <i class="alert__close fas fa-times"></i>
+          </div>
+          <div class="alert alert--warning">
+            <i class="alert__icon fas fa-exclamation-triangle"></i>
+            <p>This is a warning alert</p>
+            <i class="alert__close fas fa-times"></i>
+          </div>
+          <div class="alert alert--error">
+            <i class="alert__icon fas fa-exclamation-circle"></i>
+            <p>This is an error alert</p>
+            <i class="alert__close fas fa-times"></i>
+          </div>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<div class="alert alert--info">
+  <i class="alert__icon fas fa-info-circle"></i>
+  <p>This is an info alert</p>
+  <i class="alert__close fas fa-times"></i>
+</div>
+<div class="alert alert--success">
+  <i class="alert__icon far fa-check-circle"></i>
+  <p>This is a success alert</p>
+  <i class="alert__close fas fa-times"></i>
+</div>
+<div class="alert alert--warning">
+  <i class="alert__icon fas fa-exclamation-triangle"></i>
+  <p>This is a warning alert</p>
+  <i class="alert__close fas fa-times"></i>
+</div>
+<div class="alert alert--error">
+  <i class="alert__icon fas fa-exclamation-circle"></i>
+  <p>This is an error alert</p>
+  <i class="alert__close fas fa-times"></i>
+</div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <code class="m-lg">
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert alert--info"</span
+              ><span class="tags">&gt;</span><br />
+              &emsp;<span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert__icon fas fa-info-circle"</span
+              ><span class="tags">&gt;&lt;/i&gt;</span><br />
+              &emsp;<span class="tags">&lt;p&gt;</span>This is an info
+              alert<span class="tags">&lt;/p&gt;</span><br />
+              &emsp;<span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert__close fas fa-times"</span
+              ><span class="tags">&gt;&lt;/i&gt;</span><br />
+              <span class="tags">&lt;/div&gt;</span><br />
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert alert--success"</span
+              ><span class="tags">&gt;</span><br />
+              &emsp;<span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert__icon far fa-check-circle"</span
+              ><span class="tags">&gt;&lt;/i&gt;</span><br />
+              &emsp;<span class="tags">&lt;p&gt;</span>This is a success
+              alert<span class="tags">&lt;/p&gt;</span><br />
+              &emsp;<span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert__close fas fa-times</span
+              >"<span class="tags">&gt;&lt;/i&gt;</span><br />
+              <span class="tags">&lt;/div&gt;</span><br />
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert alert--warning"</span
+              ><span class="tags">&gt;</span><br />
+              &emsp;<span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert__icon fas fa-exclamation-triangle"</span
+              ><span class="tags">&gt;&lt;/i&gt;</span><br />
+              &emsp;<span class="tags">&lt;p&gt;</span>This is a warning
+              alert<span class="tags">&lt;/p&gt;</span><br />
+              &emsp;<span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert__close fas fa-times"</span
+              ><span class="tags">&gt;&lt;/i&gt;</span><br />
+              <span class="tags">&lt;/div&gt;</span><br />
+              <span class="tags">&lt;div</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert alert--error"</span
+              ><span class="tags">&gt;</span><br />
+              &emsp;<span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert__icon fas fa-exclamation-circle"</span
+              ><span class="tags">&gt;&lt;/i&gt;</span><br />
+              &emsp;<span class="tags">&lt;p&gt;</span>This is an error
+              alert<span class="tags">&lt;/p&gt;</span><br />
+              &emsp;<span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"alert__close fas fa-times"</span
+              ><span class="tags">&gt;&lt;/i&gt;</span><br />
+              <span class="tags">&lt;/div&gt;</span>
+            </code>
+          </div>
+        </div>
+      </section>
+
       <!-- Badge section -->
       <section>
         <h2 id="badge" class="text-lg fw-500 mt-xxl mb-xs">Badge</h2>
@@ -278,7 +503,7 @@
           is grey, you change the color to red, yellow or green by using the
           examples given below.
         </p>
-        <div class="display-badge">
+        <div class="display-card">
           <div class="badge-container">
             <img
               class="avatar"
@@ -458,7 +683,7 @@
           cart. The above colors can be used with badge on icons in the same
           way. Default backgound color is blue.
         </p>
-        <div class="display-badge">
+        <div class="display-card">
           <div class="badge-container">
             <i class="fas fa-shopping-cart fa-2x"></i>
             <span class="badge-on-icon badge--green">4</span>
@@ -535,7 +760,207 @@
           </div>
         </div>
       </section>
+
+      <!-- Button section -->
+      <section>
+        <h2 id="button" class="text-lg fw-500 mt-xxl mb-xs">Button</h2>
+        <p class="my-xs">
+          There are several predefined button styles for different purposes.
+        </p>
+        <h3 class="text-md mt-md mb-xs">Primary and secondary buttons</h3>
+        <p class="my-xs">
+          Use class <span class="text-highlight">btn</span> for buttons and then
+          <span class="text-highlight">btn--primary</span> or
+          <span class="text-highlight">btn--secondary</span> for primary or
+          secondary colored buttons. For pill shaped button, use class
+          <span class="text-highlight">btn--pill</span>.
+        </p>
+        <div class="display-card display-card-btn">
+          <div>
+            <button class="btn btn--primary">Primary</button>
+            <button class="btn btn--primary btn--pill">Primary</button>
+            <button class="btn btn--primary" disabled>Primary</button>
+          </div>
+          <div>
+            <button class="btn btn--secondary">Secondary</button>
+            <button class="btn btn--secondary btn--pill">Secondary</button>
+            <button class="btn btn--secondary" disabled>Secondary</button>
+          </div>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<button class="btn btn--primary">Primary</button>
+<button class="btn btn--primary btn--pill">Primary</button>
+<button class="btn btn--primary" disabled>Primary</button>
+
+<button class="btn btn--secondary">Secondary</button>
+<button class="btn btn--secondary btn--pill">Secondary</button>
+<button class="btn btn--secondary" disabled>Secondary</button>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <code class="m-lg">
+              <span class="tags">&lt;button</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"btn btn--primary"</span
+              ><span class="tags">&gt;</span>Primary<span class="tags"
+                >&lt;/button&gt;</span
+              >
+              <br />
+              <span class="tags">&lt;button</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"btn btn--primary btn--pill"</span
+              ><span class="tags">&gt;</span>Primary<span class="tags"
+                >&lt;/button&gt;</span
+              >
+              <br />
+              <span class="tags">&lt;button</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"btn btn--primary"</span
+              >
+              disabled<span class="tags">&gt;</span>Primary<span class="tags"
+                >&lt;/button&gt;</span
+              >
+              <br /><br />
+              <span class="tags">&lt;button</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"btn btn--secondary"</span
+              ><span class="tags">&gt;</span>Secondary<span class="tags"
+                >&lt;/button&gt;</span
+              >
+              <br />
+              <span class="tags">&lt;button</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"btn btn--secondary btn--pill"</span
+              ><span class="tags">&gt;</span>Secondary<span class="tags"
+                >&lt;/button&gt;</span
+              >
+              <br />
+              <span class="tags">&lt;button</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"btn btn--secondary"</span
+              >
+              disabled<span class="tags">&gt;</span>Secondary<span class="tags"
+                >&lt;/button&gt;</span
+              >
+            </code>
+          </div>
+        </div>
+        <h3 class="text-md mt-md mb-xs">Link buttons</h3>
+        <p class="my-xs">
+          Use classes <span class="text-highlight">btn btn--link</span> for
+          links.
+        </p>
+        <div class="display-card">
+          <a href="#" class="btn btn--link">Link</a>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<a href="#" class="btn btn--link">Link</a>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <code class="m-lg">
+              <span class="tags">&lt;a</span>
+              <span class="attribute">href</span>=<span class="value">"#"</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"btn btn--link"</span
+              ><span class="tags">&gt;</span>Link<span class="tags"
+                >&lt;/a&gt;</span
+              >
+            </code>
+          </div>
+        </div>
+        <h3 class="text-md mt-md mb-xs">Icon buttons</h3>
+        <p class="my-xs">
+          Use classes <span class="text-highlight">btn</span>
+          <span class="text-highlight">btn--link</span> for icon buttons.
+        </p>
+        <div class="display-card">
+          <button class="btn btn--icon">
+            <i class="far fa-envelope fa-2x"></i>
+          </button>
+          <button class="btn btn--icon">
+            <i class="far fa-bookmark fa-2x"></i>
+          </button>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<button class="btn btn--icon">
+  <i class="far fa-envelope fa-2x"></i>
+</button>
+<button class="btn btn--icon">
+  <i class="far fa-bookmark fa-2x"></i>
+</button>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <code class="m-lg">
+              <span class="tags">&lt;button</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"btn btn--icon"</span
+              ><span class="tags">&gt;</span><br />
+              &emsp;<span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"far fa-envelope fa-2x"</span
+              ><span class="tags">&gt;&lt;/i&gt;</span><br />
+              <span class="tags">&lt;/button&gt;</span><br />
+              <span class="tags">&lt;button</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"btn btn--icon"</span
+              ><span class="tags">&gt;</span><br />
+              &emsp;<span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"far fa-bookmark fa-2x"</span
+              ><span class="tags">&gt;&lt;/i&gt;</span><br />
+              <span class="tags">&lt;/button&gt;</span>
+            </code>
+          </div>
+        </div>
+        <h3 class="text-md mt-md mb-xs">Floating action button</h3>
+        <p class="my-xs">
+          Use classes <span class="text-highlight">btn</span>
+          <span class="text-highlight">btn--link</span> for floating action
+          button.
+        </p>
+        <div class="display-card">
+          <a href="#" class="btn btn--floating">
+            <i class="fas fa-arrow-circle-up fa-2x"></i>
+          </a>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<a href="#" class="btn btn--floating">
+  <i class="fas fa-arrow-circle-up fa-2x"></i>
+</a>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <code class="m-lg">
+              <span class="tags">&lt;a</span>
+              <span class="attribute">href</span>=<span class="value">"#"</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"btn btn--floating"</span
+              ><span class="tags">&gt;</span> <br />
+              &emsp;<span class="tags">&lt;i</span>
+              <span class="attribute">class</span>=<span class="value"
+                >"fas fa-arrow-circle-up fa-2x"</span
+              ><span class="tags">&gt;&lt;/i&gt;</span> <br />
+              <span class="tags">&lt;/a&gt;</span>
+            </code>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="../js/docs.js"></script>
+    <script src="../js/alert.js"></script>
   </body>
 </html>
