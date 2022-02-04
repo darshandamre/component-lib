@@ -75,7 +75,7 @@ body {
   cursor: pointer;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 1rem;
   display: none;
 }
 .code-snippet__wrapper:hover > .btn--copy {
@@ -84,7 +84,7 @@ body {
 .code-snippet {
   background-color: var(--black);
   border-radius: 15px;
-  /* max-height: 20rem; */
+  max-height: 20rem;
   overflow: auto;
 
   display: flex;
