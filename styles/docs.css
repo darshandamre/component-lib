@@ -69,6 +69,7 @@ body {
   position: relative;
   max-width: 45rem;
 }
+
 .btn--copy {
   background-color: inherit;
   color: var(--font-color);
@@ -78,25 +79,37 @@ body {
   right: 1rem;
   display: none;
 }
+
 .code-snippet__wrapper:hover > .btn--copy {
   display: block;
 }
+
 .code-snippet {
   background-color: var(--black);
   border-radius: 15px;
   max-height: 20rem;
   overflow: auto;
+  padding: 2rem;
 
   display: flex;
   align-items: start;
 }
-.tags {
+
+pre {
+  white-space: pre-line;
+}
+
+.hljs-tag .hljs-name,
+.hljs-tag {
   color: var(--blue-code);
 }
-.attribute {
+
+.hljs-tag .hljs-attr {
   color: var(--white-code);
 }
-.value {
+
+.hljs-string {
   color: var(--yellow-code);
 }
+
 /************************************/
