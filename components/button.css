@@ -4,6 +4,13 @@
   border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
+  background: var(--btn-bg-default);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.btn:hover {
+  background: var(--btn-hover-bg-default);
 }
 
 .btn--primary {
@@ -54,11 +61,13 @@
 }
 
 .btn--floating {
+  background: inherit;
   position: fixed;
   bottom: 0;
   right: 0;
 }
 
 .btn--floating:hover {
+  background: inherit;
   color: var(--white);
 }

@@ -605,6 +605,517 @@
           </div>
         </div>
       </section>
+
+      <!-- Card section -->
+      <section>
+        <h2 id="card" class="text-lg fw-500 mt-xxl mb-xs">Cards</h2>
+        <p class="my-xs">
+          There are vertical and horizontal cards. To these cards you can give a
+          badge or a dismiss button, you can overlay some text on these cards
+          too. And there is also a text only variant that you can use. Copy the
+          html given below each example to use that component.
+        </p>
+        <h3 class="text-md mt-md mb-xs">Vertical cards</h3>
+        <!-- <p class="my-xs"></p> -->
+        <div class="display-card display-card--vertical-cards">
+          <div class="card mx-auto">
+            <img
+              class="card__image"
+              src="../assets/first-playing-cards.jpg"
+              alt="first playing cards"
+            />
+            <div class="card__content">
+              <h2 class="card__title">1st Playing Cards</h2>
+              <h3 class="card__subtitle">&#8377; 999</h3>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card mx-auto">
+            <img
+              class="card__image"
+              src="../assets/first-playing-cards.jpg"
+              alt="first playing cards"
+            />
+            <div class="card__content">
+              <h2 class="card__title">1st Playing Cards</h2>
+              <h3 class="card__subtitle">&#8377; 999</h3>
+              <button class="btn btn--primary">Buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<div class="card">
+  <img class="card__image" src="../assets/first-playing-cards.jpg" alt="first playing cards" />
+  <div class="card__content">
+    <h2 class="card__title">1st Playing Cards</h2>
+    <h3 class="card__subtitle">₹ 999</h3>
+    <button class="btn">Add to Cart</button>
+  </div>
+</div>
+
+<div class="card">
+  <img class="card__image" src="../assets/first-playing-cards.jpg" alt="first playing cards" />
+  <div class="card__content">
+    <h2 class="card__title">1st Playing Cards</h2>
+    <h3 class="card__subtitle">₹ 999</h3>
+    <button class="btn btn--primary">Buy now</button>
+  </div>
+</div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <pre><code>&lt;div class=&quot;card&quot;&gt;
+              &emsp;&lt;img class=&quot;card__image&quot; src=&quot;../assets/first-playing-cards.jpg&quot; alt=&quot;first playing cards&quot; /&gt;
+              &emsp;&lt;div class=&quot;card__content&quot;&gt;
+                &emsp;&emsp;&lt;h2 class=&quot;card__title&quot;&gt;1st Playing Cards&lt;/h2&gt;
+                &emsp;&emsp;&lt;h3 class=&quot;card__subtitle&quot;&gt;&#8377; 999&lt;/h3&gt;
+                &emsp;&emsp;&lt;button class=&quot;btn&quot;&gt;Add to Cart&lt;/button&gt;
+              &emsp;&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;card&quot;&gt;
+              &emsp;&lt;img class=&quot;card__image&quot; src=&quot;../assets/first-playing-cards.jpg&quot; alt=&quot;first playing cards&quot; /&gt;
+              &emsp;&lt;div class=&quot;card__content&quot;&gt;
+                &emsp;&emsp;&lt;h2 class=&quot;card__title&quot;&gt;1st Playing Cards&lt;/h2&gt;
+                &emsp;&emsp;&lt;h3 class=&quot;card__subtitle&quot;&gt;&#8377; 999&lt;/h3&gt;
+                &emsp;&emsp;&lt;button class=&quot;btn btn--primary&quot;&gt;Buy now&lt;/button&gt;
+              &emsp;&lt;/div&gt;
+            &lt;/div&gt;
+            </code></pre>
+          </div>
+        </div>
+        <h3 class="text-md mt-md mb-xs">Horizontal cards</h3>
+        <!-- <p class="my-xs"></p> -->
+        <div class="display-card display-card--horizontal-cards">
+          <div class="card card--horizontal mx-auto">
+            <img
+              class="card__image"
+              src="../assets/first-playing-cards.jpg"
+              alt="first playing cards"
+            />
+            <div class="card__content">
+              <h2 class="card__title">1st Playing Cards</h2>
+              <h3 class="card__subtitle">
+                &#8377; 999 <span class="card__subtitle--canceled">1999</span>
+              </h3>
+              <button class="btn">Add to Cart</button>
+              <button class="btn card__btn--outline">Save to wishlist</button>
+            </div>
+          </div>
+          <div class="card card--horizontal mx-auto">
+            <img
+              class="card__image"
+              src="../assets/first-playing-cards.jpg"
+              alt="first playing cards"
+            />
+            <div class="card__content">
+              <h2 class="card__title">1st Playing Cards</h2>
+              <h3 class="card__subtitle">
+                &#8377; 999 <span class="card__subtitle--canceled">1999</span>
+              </h3>
+              <button class="btn btn--primary">Buy now</button>
+              <button class="btn">Remove from wishlist</button>
+            </div>
+          </div>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<div class="card card--horizontal">
+  <img class="card__image" src="../assets/first-playing-cards.jpg" alt="first playing cards" />
+  <div class="card__content">
+    <h2 class="card__title">1st Playing Cards</h2>
+    <h3 class="card__subtitle">
+      ₹ 999 <span class="card__subtitle--canceled">1999</span>
+    </h3>
+    <button class="btn">Add to Cart</button>
+    <button class="btn card__btn--outline">Save to wishlist</button>
+  </div>
+</div>
+
+<div class="card card--horizontal">
+  <img class="card__image" src="../assets/first-playing-cards.jpg" alt="first playing cards" />
+  <div class="card__content">
+    <h2 class="card__title">1st Playing Cards</h2>
+    <h3 class="card__subtitle">
+      ₹ 999 <span class="card__subtitle--canceled">1999</span>
+    </h3>
+    <button class="btn btn--primary">Buy now</button>
+    <button class="btn">Remove from wishlist</button>
+  </div>
+</div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <pre><code>&lt;div class=&quot;card card--horizontal&quot;&gt;
+              &emsp;&lt;img class=&quot;card__image&quot; src=&quot;../assets/first-playing-cards.jpg&quot; alt=&quot;first playing cards&quot; /&gt;
+              &emsp;&lt;div class=&quot;card__content&quot;&gt;
+                &emsp;&emsp;&lt;h2 class=&quot;card__title&quot;&gt;1st Playing Cards&lt;/h2&gt;
+                &emsp;&emsp;&lt;h3 class=&quot;card__subtitle&quot;&gt; 
+                &emsp;&emsp;&emsp;&#8377; 999 &lt;span class=&quot;card__subtitle--canceled&quot;&gt;1999&lt;/span&gt;
+                &emsp;&emsp;&lt;/h3&gt;
+                &emsp;&emsp;&lt;button class=&quot;btn&quot;&gt;Add to Cart&lt;/button&gt;
+                &emsp;&emsp;&lt;button class=&quot;btn card__btn--outline&quot;&gt;Save to wishlist&lt;/button&gt;
+              &emsp;&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;card card--horizontal&quot;&gt;
+              &emsp;&lt;img class=&quot;card__image&quot; src=&quot;../assets/first-playing-cards.jpg&quot; alt=&quot;first playing cards&quot; /&gt;
+              &emsp;&lt;div class=&quot;card__content&quot;&gt;
+                &emsp;&emsp;&lt;h2 class=&quot;card__title&quot;&gt;1st Playing Cards&lt;/h2&gt;
+                &emsp;&emsp;&lt;h3 class=&quot;card__subtitle&quot;&gt;
+                  &emsp;&emsp;&emsp;&#8377; 999 &lt;span class=&quot;card__subtitle--canceled&quot;&gt;1999&lt;/span&gt;
+                &emsp;&emsp;&lt;/h3&gt;
+                &emsp;&emsp;&lt;button class=&quot;btn btn--primary&quot;&gt;Buy now&lt;/button&gt;
+                &emsp;&emsp;&lt;button class=&quot;btn&quot;&gt;Remove from wishlist&lt;/button&gt;
+              &emsp;&lt;/div&gt;
+            &lt;/div&gt;
+            </code></pre>
+          </div>
+        </div>
+
+        <h3 class="text-md mt-md mb-xs">Card with badges</h3>
+        <!-- <p class="my-xs"></p> -->
+        <div class="display-card display-card--horizontal-cards">
+          <div class="card mx-auto">
+            <div class="card__badge">Sale</div>
+            <img
+              class="card__image"
+              src="../assets/first-playing-cards.jpg"
+              alt="first playing cards"
+            />
+            <div class="card__content">
+              <h2 class="card__title">1st Playing Cards</h2>
+              <h3 class="card__subtitle">&#8377; 999</h3>
+              <button class="btn btn--primary">Buy now</button>
+            </div>
+          </div>
+          <div class="card card--horizontal mx-auto">
+            <div class="card__badge">Sale</div>
+            <img
+              class="card__image"
+              src="../assets/first-playing-cards.jpg"
+              alt="first playing cards"
+            />
+            <div class="card__content">
+              <h2 class="card__title">1st Playing Cards</h2>
+              <h3 class="card__subtitle">
+                &#8377; 999 <span class="card__subtitle--canceled">1999</span>
+              </h3>
+              <button class="btn btn--primary">Buy now</button>
+              <button class="btn">Save to wishlist</button>
+            </div>
+          </div>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<div class="card">
+  <div class="card__badge">Sale</div>
+  <img class="card__image" src="../assets/first-playing-cards.jpg" alt="first playing cards" />
+  <div class="card__content">
+    <h2 class="card__title">1st Playing Cards</h2>
+    <h3 class="card__subtitle">₹ 999</h3>
+    <button class="btn btn--primary">Buy now</button>
+  </div>
+</div>
+
+<div class="card card--horizontal">
+  <div class="card__badge">Sale</div>
+  <img class="card__image" src="../assets/first-playing-cards.jpg" alt="first playing cards" />
+  <div class="card__content">
+    <h2 class="card__title">1st Playing Cards</h2>
+    <h3 class="card__subtitle">
+      ₹ 999 <span class="card__subtitle--canceled">1999</span>
+    </h3>
+    <button class="btn btn--primary">Buy now</button>
+    <button class="btn">Save to wishlist</button>
+  </div>
+</div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <pre><code>&lt;div class=&quot;card&quot;&gt;
+              &emsp;&lt;div class=&quot;card__badge&quot;&gt;Sale&lt;/div&gt;
+              &emsp;&lt;img class=&quot;card__image&quot; src=&quot;../assets/first-playing-cards.jpg&quot; alt=&quot;first playing cards&quot; /&gt;
+              &emsp;&lt;div class=&quot;card__content&quot;&gt;
+                &emsp;&emsp;&lt;h2 class=&quot;card__title&quot;&gt;1st Playing Cards&lt;/h2&gt;
+                &emsp;&emsp;&lt;h3 class=&quot;card__subtitle&quot;&gt;&#8377; 999&lt;/h3&gt;
+                &emsp;&emsp;&lt;button class=&quot;btn btn--primary&quot;&gt;Buy now&lt;/button&gt;
+              &emsp;&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;card card--horizontal&quot;&gt;
+              &emsp;&lt;div class=&quot;card__badge&quot;&gt;Sale&lt;/div&gt;
+              &emsp;&lt;img class=&quot;card__image&quot; src=&quot;../assets/first-playing-cards.jpg&quot; alt=&quot;first playing cards&quot; /&gt;
+              &emsp;&lt;div class=&quot;card__content&quot;&gt;
+                &emsp;&emsp;&lt;h2 class=&quot;card__title&quot;&gt;1st Playing Cards&lt;/h2&gt;
+                &emsp;&emsp;&lt;h3 class=&quot;card__subtitle&quot;&gt;
+                  &emsp;&emsp;&emsp;&#8377; 999 &lt;span class=&quot;card__subtitle--canceled&quot;&gt;1999&lt;/span&gt;
+                &emsp;&emsp;&lt;/h3&gt;
+                &emsp;&emsp;&lt;button class=&quot;btn btn--primary&quot;&gt;Buy now&lt;/button&gt;
+                &emsp;&emsp;&lt;button class=&quot;btn&quot;&gt;Save to wishlist&lt;/button&gt;
+              &emsp;&lt;/div&gt;
+            &lt;/div&gt;
+            </code></pre>
+          </div>
+        </div>
+
+        <h3 class="text-md mt-md mb-xs">Card with dismiss</h3>
+        <!-- <p class="my-xs"></p> -->
+        <div class="display-card display-card--horizontal-cards">
+          <div class="card mx-auto">
+            <div class="card__dismiss"><i class="fas fa-times"></i></div>
+            <img
+              class="card__image"
+              src="../assets/first-playing-cards.jpg"
+              alt="first playing cards"
+            />
+            <div class="card__content">
+              <h2 class="card__title">1st Playing Cards</h2>
+              <h3 class="card__subtitle">&#8377; 999</h3>
+              <button class="btn btn--primary">Buy now</button>
+            </div>
+          </div>
+          <div class="card card--horizontal mx-auto">
+            <div class="card__dismiss"><i class="fas fa-times"></i></div>
+            <img
+              class="card__image"
+              src="../assets/first-playing-cards.jpg"
+              alt="first playing cards"
+            />
+            <div class="card__content">
+              <h2 class="card__title">1st Playing Cards</h2>
+              <h3 class="card__subtitle">
+                &#8377; 999 <span class="card__subtitle--canceled">1999</span>
+              </h3>
+              <button class="btn btn--primary">Buy now</button>
+              <button class="btn">Save to wishlist</button>
+            </div>
+          </div>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<div class="card">
+  <div class="card__dismiss">
+    <i class="fas fa-times"></i>
+  </div>
+  <img class="card__image" src="../assets/first-playing-cards.jpg" alt="first playing cards" />
+  <div class="card__content">
+    <h2 class="card__title">1st Playing Cards</h2>
+    <h3 class="card__subtitle">₹ 999</h3>
+    <button class="btn btn--primary">Buy now</button>
+  </div>
+</div>
+
+<div class="card card--horizontal">
+  <div class="card__dismiss">
+    <i class="fas fa-times"></i>
+  </div>
+  <img class="card__image" src="../assets/first-playing-cards.jpg" alt="first playing cards" />
+  <div class="card__content">
+    <h2 class="card__title">1st Playing Cards</h2>
+    <h3 class="card__subtitle">
+      ₹ 999 <span class="card__subtitle--canceled">1999</span>
+    </h3>
+    <button class="btn btn--primary">Buy now</button>
+    <button class="btn">Save to wishlist</button>
+  </div>
+</div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <pre><code>&lt;div class=&quot;card&quot;&gt;
+              &emsp;&lt;div class=&quot;card__dismiss&quot;&gt;
+                &emsp;&emsp;&lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+              &emsp;&lt;/div&gt;
+              &emsp;&lt;img class=&quot;card__image&quot; src=&quot;../assets/first-playing-cards.jpg&quot; alt=&quot;first playing cards&quot; /&gt;
+              &emsp;&lt;div class=&quot;card__content&quot;&gt;
+                &emsp;&emsp;&lt;h2 class=&quot;card__title&quot;&gt;1st Playing Cards&lt;/h2&gt;
+                &emsp;&emsp;&lt;h3 class=&quot;card__subtitle&quot;&gt;&#8377; 999&lt;/h3&gt;
+                &emsp;&emsp;&lt;button class=&quot;btn btn--primary&quot;&gt;Buy now&lt;/button&gt;
+              &emsp;&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;card card--horizontal&quot;&gt;
+              &emsp;&lt;div class=&quot;card__dismiss&quot;&gt;
+                &emsp;&emsp;&lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+              &emsp;&lt;/div&gt;
+              &emsp;&lt;img class=&quot;card__image&quot; src=&quot;../assets/first-playing-cards.jpg&quot; alt=&quot;first playing cards&quot; /&gt;
+              &emsp;&lt;div class=&quot;card__content&quot;&gt;
+                &emsp;&emsp;&lt;h2 class=&quot;card__title&quot;&gt;1st Playing Cards&lt;/h2&gt;
+                &emsp;&emsp;&lt;h3 class=&quot;card__subtitle&quot;&gt;
+                  &emsp;&emsp;&emsp;&#8377; 999 &lt;span class=&quot;card__subtitle--canceled&quot;&gt;1999&lt;/span&gt;
+                &emsp;&emsp;&lt;/h3&gt;
+                &emsp;&emsp;&lt;button class=&quot;btn btn--primary&quot;&gt;Buy now&lt;/button&gt;
+                &emsp;&emsp;&lt;button class=&quot;btn&quot;&gt;Save to wishlist&lt;/button&gt;
+              &emsp;&lt;/div&gt;
+            &lt;/div&gt;
+            </code></pre>
+          </div>
+        </div>
+
+        <h3 class="text-md mt-md mb-xs">Cards with text overlay</h3>
+        <!-- <p class="my-xs"></p> -->
+        <div class="display-card display-card--horizontal-cards">
+          <div class="card mx-auto">
+            <div class="card__overlay">Out of stock</div>
+            <img
+              class="card__image"
+              src="../assets/first-playing-cards.jpg"
+              alt="first playing cards"
+            />
+            <div class="card__content">
+              <h2 class="card__title">1st Playing Cards</h2>
+              <h3 class="card__subtitle">&#8377; 999</h3>
+              <button class="btn btn--primary">Buy now</button>
+            </div>
+          </div>
+          <div class="card card--horizontal mx-auto">
+            <div class="card__overlay">Out of stock</div>
+            <img
+              class="card__image"
+              src="../assets/first-playing-cards.jpg"
+              alt="first playing cards"
+            />
+            <div class="card__content">
+              <h2 class="card__title">1st Playing Cards</h2>
+              <h3 class="card__subtitle">
+                &#8377; 999 <span class="card__subtitle--canceled">1999</span>
+              </h3>
+              <button class="btn btn--primary">Buy now</button>
+              <button class="btn">Save to wishlist</button>
+            </div>
+          </div>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<div class="card">
+  <div class="card__overlay">Out of stock</div>
+  <img class="card__image" src="../assets/first-playing-cards.jpg" alt="first playing cards" />
+  <div class="card__content">
+    <h2 class="card__title">1st Playing Cards</h2>
+    <h3 class="card__subtitle">₹ 999</h3>
+    <button class="btn btn--primary">Buy now</button>
+  </div>
+</div>
+
+<div class="card card--horizontal">
+  <div class="card__overlay">Out of stock</div>
+  <img class="card__image" src="../assets/first-playing-cards.jpg" alt="first playing cards" />
+  <div class="card__content">
+    <h2 class="card__title">1st Playing Cards</h2>
+    <h3 class="card__subtitle">
+      ₹ 999 <span class="card__subtitle--canceled">1999</span>
+    </h3>
+    <button class="btn btn--primary">Buy now</button>
+    <button class="btn">Save to wishlist</button>
+  </div>
+</div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <pre><code>&lt;div class=&quot;card&quot;&gt;
+              &emsp;&lt;div class=&quot;card__overlay&quot;&gt;Out of stock&lt;/div&gt;
+              &emsp;&lt;img class=&quot;card__image&quot; src=&quot;../assets/first-playing-cards.jpg&quot; alt=&quot;first playing cards&quot; /&gt;
+              &emsp;&lt;div class=&quot;card__content&quot;&gt;
+                &emsp;&emsp;&lt;h2 class=&quot;card__title&quot;&gt;1st Playing Cards&lt;/h2&gt;
+                &emsp;&emsp;&lt;h3 class=&quot;card__subtitle&quot;&gt;&#8377; 999&lt;/h3&gt;
+                &emsp;&emsp;&lt;button class=&quot;btn btn--primary&quot;&gt;Buy now&lt;/button&gt;
+              &emsp;&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;card card--horizontal&quot;&gt;
+              &emsp;&lt;div class=&quot;card__overlay&quot;&gt;Out of stock&lt;/div&gt;
+              &emsp;&lt;img class=&quot;card__image&quot; src=&quot;../assets/first-playing-cards.jpg&quot; alt=&quot;first playing cards&quot; /&gt;
+              &emsp;&lt;div class=&quot;card__content&quot;&gt;
+                &emsp;&emsp;&lt;h2 class=&quot;card__title&quot;&gt;1st Playing Cards&lt;/h2&gt;
+                &emsp;&emsp;&lt;h3 class=&quot;card__subtitle&quot;&gt;
+                  &emsp;&emsp;&emsp;&#8377; 999 &lt;span class=&quot;card__subtitle--canceled&quot;&gt;1999&lt;/span&gt;
+                &emsp;&emsp;&lt;/h3&gt;
+                &emsp;&emsp;&lt;button class=&quot;btn btn--primary&quot;&gt;Buy now&lt;/button&gt;
+                &emsp;&emsp;&lt;button class=&quot;btn&quot;&gt;Save to wishlist&lt;/button&gt;
+              &emsp;&lt;/div&gt;
+            &lt;/div&gt;
+            </code></pre>
+          </div>
+        </div>
+
+        <h3 class="text-md mt-md mb-xs">Text only cards</h3>
+        <!-- <p class="my-xs"></p> -->
+        <div class="display-card display-card--horizontal-cards">
+          <div class="card card--text-only mx-auto">
+            <div class="card__content">
+              <h2 class="card__title">1st Playing Cards</h2>
+              <h3 class="card__subtitle">
+                &#8377; 999 <span class="card__subtitle--canceled">1999</span>
+              </h3>
+              <p class="card__text">
+                Premium, crushed Bicycle stock. These have the highest attention
+                to quality of any playing cards currently on the market. The
+                Deck comes in Mnemonica stack with a duplicate 4 of Spades and a
+                playing card reveal on the King of Hearts. Both jokers are also
+                foil stamped and identical.
+              </p>
+            </div>
+            <button class="btn btn--primary">Buy now</button>
+            <button class="btn">Save to wishlist</button>
+          </div>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<div class="card card--text-only">
+  <div class="card__content">
+    <h2 class="card__title">1st Playing Cards</h2>
+    <h3 class="card__subtitle">
+      ₹ 999 <span class="card__subtitle--canceled">1999</span>
+    </h3>
+    <p class="card__text">
+      Premium, crushed Bicycle stock. These have the highest attention
+      to quality of any playing cards currently on the market. The
+      Deck comes in Mnemonica stack with a duplicate 4 of Spades and a
+      playing card reveal on the King of Hearts. Both jokers are also
+      foil stamped and identical.
+    </p>
+  </div>
+  <button class="btn btn--primary">Buy now</button>
+  <button class="btn">Save to wishlist</button>
+</div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <pre><code>&lt;div class=&quot;card card--text-only&quot;&gt;
+              &emsp;&lt;div class=&quot;card__content&quot;&gt;
+                &emsp;&emsp;&lt;h2 class=&quot;card__title&quot;&gt;1st Playing Cards&lt;/h2&gt;
+                &emsp;&emsp;&lt;h3 class=&quot;card__subtitle&quot;&gt;
+                  &emsp;&emsp;&emsp;&#8377; 999 &lt;span class=&quot;card__subtitle--canceled&quot;&gt;1999&lt;/span&gt;
+                &emsp;&emsp;&lt;/h3&gt;
+                &emsp;&emsp;&lt;p class=&quot;card__text&quot;&gt;
+                  &emsp;&emsp;&emsp;Premium, crushed Bicycle stock. These have the highest attention
+                  &emsp;&emsp;&emsp;to quality of any playing cards currently on the market. The
+                  &emsp;&emsp;&emsp;Deck comes in Mnemonica stack with a duplicate 4 of Spades and a
+                  &emsp;&emsp;&emsp;playing card reveal on the King of Hearts. Both jokers are also
+                  &emsp;&emsp;&emsp;foil stamped and identical.
+                &emsp;&emsp;&lt;/p&gt;
+              &emsp;&lt;/div&gt;
+              &emsp;&lt;button class=&quot;btn btn--primary&quot;&gt;Buy now&lt;/button&gt;
+              &emsp;&lt;button class=&quot;btn&quot;&gt;Save to wishlist&lt;/button&gt;
+            &lt;/div&gt;
+            </code></pre>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="../js/highlight.min.js"></script>
     <script src="../js/docs.js"></script>

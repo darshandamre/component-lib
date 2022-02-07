@@ -4,6 +4,7 @@
 @import "../components/badge.css";
 @import "../components/button.css";
 @import "../components/alert.css";
+@import "../components/cards.css";
 
 /************** layout ****************/
 body {
@@ -47,8 +48,14 @@ body {
   padding: 1rem 0;
 }
 
-.display-card-btn {
+.display-card-btn,
+.display-card--horizontal-cards {
   flex-direction: column;
+}
+
+.display-card--vertical-cards,
+.display-card--horizontal-cards {
+  max-width: none;
 }
 
 .display-card--alert {

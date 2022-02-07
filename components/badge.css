@@ -17,7 +17,7 @@
 }
 
 .badge-on-icon {
-  background-color: #1d4ed8;
+  background-color: var(--blue);
   border-radius: 50rem;
   color: #fff;
   display: inline-block;
