@@ -4,13 +4,13 @@
   border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
-  background: #3b3b3b;
+  background: var(--btn-bg-default);
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
 .btn:hover {
-  background: #424242;
+  background: var(--btn-hover-bg-default);
 }
 
 .btn--primary {

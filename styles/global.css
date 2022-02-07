@@ -24,6 +24,12 @@
   --blue: #1d4ed8;
   --grey: #474747;
 
+  --btn-bg-default: #3b3b3b;
+  --btn-hover-bg-default: #424242;
+
+  --card-bg: #171717;
+  --overlay: rgba(0, 0, 0, 0.5);
+
   --info: var(--blue-code);
   --info-bg: #12b0e812;
   --success: var(--green);

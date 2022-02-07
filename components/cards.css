@@ -1,6 +1,6 @@
 .card {
   max-width: 18.75rem;
-  background-color: #171717;
+  background-color: var(--card-bg);
   border-radius: 5px;
   text-align: center;
 
@@ -57,7 +57,7 @@
 
 .card__overlay {
   color: var(--white);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--overlay);
   font-size: 1.5rem;
 
   position: absolute;
@@ -105,7 +105,7 @@
 
 .card__btn--outline {
   background: inherit;
-  border: 3px solid #3b3b3b;
+  border: 3px solid var(--btn-bg-default);
 }
 
 .card--horizontal .card__overlay {
