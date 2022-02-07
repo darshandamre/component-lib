@@ -1,0 +1,135 @@
+.card {
+  max-width: 18.75rem;
+  background-color: #171717;
+  border-radius: 5px;
+  text-align: center;
+
+  position: relative;
+}
+
+.card__image {
+  border-radius: 5px;
+}
+
+.card__title {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0.5rem 0 0.5rem;
+}
+
+.card__subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.card__subtitle--canceled {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  text-decoration: line-through;
+}
+
+.card__content > .btn {
+  width: 100%;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+.card__badge {
+  background: var(--blue);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.25rem 0.75rem;
+  position: absolute;
+  top: 1rem;
+}
+
+.card__dismiss {
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  position: absolute;
+  right: 0;
+}
+
+.card__overlay {
+  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/********* horizontal card *********/
+.card--horizontal {
+  width: 43.75rem;
+  max-width: 100%;
+  display: flex;
+  text-align: left;
+}
+
+.card--horizontal .card__image {
+  max-height: 24.375rem;
+}
+
+.card--horizontal .card__content {
+  margin: 2.5rem;
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card--horizontal .card__title {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+.card--horizontal .card__subtitle {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.card--horizontal .btn:nth-of-type(1) {
+  margin: auto 0 1rem;
+}
+
+.card__btn--outline {
+  background: inherit;
+  border: 3px solid #3b3b3b;
+}
+
+.card--horizontal .card__overlay {
+  font-size: 2rem;
+}
+
+/******** text only cards ********/
+.card--text-only {
+  width: 43.75rem;
+  max-width: 100%;
+  padding: 2rem;
+  text-align: left;
+}
+
+.card--text-only .card__title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.card--text-only .btn {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+.card__text {
+  margin: 1rem 0;
+}
