@@ -55,6 +55,7 @@
         <li><a href="#text-utils">Text Utilities</a></li>
         <li><a href="#lists">Lists</a></li>
         <li><a href="#rating">Rating</a></li>
+        <li><a href="#snackbar">Snackbar</a></li>
       </ul>
     </aside>
     <main class="main text-base width-80 mx-auto mb-5">
@@ -1510,6 +1511,57 @@ Quis voluptate explicabo nesciunt mollitia veniam.
               &emsp;&lt;i class=&quot;fas fa-star rating__star--yellow&quot;&gt;&lt;/i&gt;
               &emsp;&lt;i class=&quot;fas fa-star rating__star&quot;&gt;&lt;/i&gt;
               &emsp;&lt;i class=&quot;fas fa-star rating__star&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            </code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- Snackbar section -->
+      <section>
+        <h2 id="snackbar" class="text-lg fw-500 mt-8 mb-1">Snackbar</h2>
+        <p class="my-1">
+          Snackbars provide brief messages about app processes at the bottom of
+          the screen.
+        </p>
+        <p class="my-1">
+          Copy the following code snippet to create a snackbar like this.
+        </p>
+        <div class="display-card">
+          <div class="snackbar">
+            <p class="snackbar__message">
+              Can't send photo. Retry in 5 seconds.
+            </p>
+            <button class="snackbar__btn">Retry</button>
+            <button class="snackbar__close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-5">
+          <button
+            class="btn--copy m-2"
+            value='<div class="snackbar">
+  <p class="snackbar__message">
+    Can&apos;t send photo. Retry in 5 seconds.
+  </p>
+  <button class="snackbar__btn">Retry</button>
+  <button class="snackbar__close">
+    <i class="fas fa-times"></i>
+  </button>
+</div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <pre><code>&lt;div class=&quot;snackbar&quot;&gt;
+              &emsp;&lt;p class=&quot;snackbar__message&quot;&gt;
+                &emsp;&emsp;Can&apos;t send photo. Retry in 5 seconds.
+              &emsp;&lt;/p&gt;
+              &emsp;&lt;button class=&quot;snackbar__btn&quot;&gt;Retry&lt;/button&gt;
+              &emsp;&lt;button class=&quot;snackbar__close&quot;&gt;
+                &emsp;&emsp;&lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+              &emsp;&lt;/button&gt;
             &lt;/div&gt;
             </code></pre>
           </div>

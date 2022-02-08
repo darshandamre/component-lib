@@ -10,6 +10,7 @@
 @import "../components/lists.css";
 @import "../components/rating.css";
 @import "../components/spacing.css";
+@import "../components/snackbar.css";
 @import "./global.css";
 
 /************** layout ****************/
