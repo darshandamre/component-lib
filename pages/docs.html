@@ -1176,6 +1176,60 @@
           </div>
         </div>
       </section>
+
+      <!-- input section -->
+      <section>
+        <h2 id="card" class="text-lg fw-500 mt-xxl mb-xs">Input</h2>
+        <p class="my-sm">
+          Use the following code snippet to use these input components.
+        </p>
+        <div class="display-card display-card--input">
+          <div>
+            <label for="input">Label</label>
+            <input
+              class="input mb-sm"
+              id="input"
+              type="text"
+              placeholder="Placeholder"
+            />
+            <label for="input--error">Label</label>
+            <div class="input__container--error">
+              <input
+                class="input input--error"
+                id="input--error"
+                type="text"
+                placeholder="Placeholder"
+              /><i class="error-icon fas fa-exclamation-triangle"></i>
+            </div>
+          </div>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<label for="input">Label</label>
+<input class="input mb-sm" id="input" type="text" placeholder="Placeholder" />
+
+<label for="input--error">Label</label>
+<div class="input__container--error">
+  <input class="input input--error" id="input--error" type="text" placeholder="Placeholder" />
+  <i class="error-icon fas fa-exclamation-triangle"></i>
+</div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <pre><code>&lt;label for=&quot;input&quot;&gt;Label&lt;/label&gt;
+              &lt;input class=&quot;input mb-sm&quot; id=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Placeholder&quot; /&gt;
+              
+              &lt;label for=&quot;input--error&quot;&gt;Label&lt;/label&gt;
+              &lt;div class=&quot;input__container--error&quot;&gt;
+                &emsp;&lt;input class=&quot;input input--error&quot; id=&quot;input--error&quot; type=&quot;text&quot; placeholder=&quot;Placeholder&quot; /&gt;
+                &emsp;&lt;i class=&quot;error-icon fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt;
+              &lt;/div&gt;
+            </code></pre>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="../js/highlight.min.js"></script>
     <script src="../js/docs.js"></script>
