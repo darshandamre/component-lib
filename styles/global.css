@@ -78,43 +78,6 @@ img {
   width: 80%;
 }
 
-/* 
-  text and spacing utils delete/modify this section 
-  after merging text-utils-and-lists branch 
-*/
-.ta-center {
-  text-align: center;
-}
-.text-white {
-  color: var(--white);
-}
-/* 16px */
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-/* 24px */
-.text-md {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-/* 32px */
-.text-lg {
-  font-size: 2rem;
-  line-height: 2.5rem;
-}
-/* 48px */
-.text-xl {
-  font-size: 3rem;
-  line-height: 4rem;
-}
-.fw-500 {
-  font-weight: 500;
-}
-.fw-600 {
-  font-weight: 600;
-}
-
 /* header */
 .logo {
   max-width: 12rem;

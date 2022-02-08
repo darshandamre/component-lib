@@ -1,5 +1,7 @@
-@import url(../components/reset.css);
-@import url(./global.css);
+@import "../components/reset.css";
+@import "./global.css";
+@import "../components/text-utils.css";
+@import "../components/spacing.css";
 
 .container {
   max-width: 120rem;
