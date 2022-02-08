@@ -1116,6 +1116,120 @@
           </div>
         </div>
       </section>
+
+      <!-- image section -->
+      <section>
+        <h2 id="image" class="text-lg fw-500 mt-xxl mb-xs">Images</h2>
+        <h3 class="text-md mt-md mb-xs">Responsive images</h3>
+        <p class="my-xs">
+          For responsive images, use class
+          <span class="text-highlight">image-resp</span> on img tags.
+        </p>
+        <div class="display-card display-card--images">
+          <img
+            class="image-resp"
+            src="../assets/memento-mori-playing-cards.jpg"
+            alt="memento mori playing cards"
+          />
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<img class="image-resp" src="../assets/memento-mori-playing-cards.jpg" alt="memento mori playing cards" />'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <pre><code>&lt;img class=&quot;image-resp&quot; src=&quot;../assets/memento-mori-playing-cards.jpg&quot; alt=&quot;memento mori playing cards&quot; /&gt;
+            </code></pre>
+          </div>
+        </div>
+
+        <h3 class="text-md mt-md mb-xs">Round images</h3>
+        <p class="my-xs">
+          For round images, use class
+          <span class="text-highlight">image-round</span> in a div and put img
+          tag inside it.
+        </p>
+        <div class="display-card display-card--images">
+          <div class="image-round">
+            <img
+              src="../assets/memento-mori-playing-cards.jpg"
+              alt="memento mori playing cards"
+            />
+          </div>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<div class="image-round">
+  <img src="../assets/memento-mori-playing-cards.jpg" alt="memento mori playing cards" />
+</div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <pre><code>&lt;div class=&quot;image-round&quot;&gt;
+              &emsp;&lt;img src=&quot;../assets/memento-mori-playing-cards.jpg&quot; alt=&quot;memento mori playing cards&quot; /&gt;
+            &lt;/div&gt;
+          </code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- input section -->
+      <section>
+        <h2 id="input" class="text-lg fw-500 mt-xxl mb-xs">Input</h2>
+        <p class="my-sm">
+          Use the following code snippet to use these input components.
+        </p>
+        <div class="display-card display-card--input">
+          <div>
+            <label for="input">Label</label>
+            <input
+              class="input mb-sm"
+              id="input"
+              type="text"
+              placeholder="Placeholder"
+            />
+            <label for="input--error">Label</label>
+            <div class="input__container--error">
+              <input
+                class="input input--error"
+                id="input--error"
+                type="text"
+                placeholder="Placeholder"
+              /><i class="error-icon fas fa-exclamation-triangle"></i>
+            </div>
+          </div>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-xl">
+          <button
+            class="btn--copy m-sm"
+            value='<label for="input">Label</label>
+<input class="input mb-sm" id="input" type="text" placeholder="Placeholder" />
+
+<label for="input--error">Label</label>
+<div class="input__container--error">
+  <input class="input input--error" id="input--error" type="text" placeholder="Placeholder" />
+  <i class="error-icon fas fa-exclamation-triangle"></i>
+</div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <pre><code>&lt;label for=&quot;input&quot;&gt;Label&lt;/label&gt;
+              &lt;input class=&quot;input mb-sm&quot; id=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Placeholder&quot; /&gt;
+              
+              &lt;label for=&quot;input--error&quot;&gt;Label&lt;/label&gt;
+              &lt;div class=&quot;input__container--error&quot;&gt;
+                &emsp;&lt;input class=&quot;input input--error&quot; id=&quot;input--error&quot; type=&quot;text&quot; placeholder=&quot;Placeholder&quot; /&gt;
+                &emsp;&lt;i class=&quot;error-icon fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt;
+              &lt;/div&gt;
+            </code></pre>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="../js/highlight.min.js"></script>
     <script src="../js/docs.js"></script>

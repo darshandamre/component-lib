@@ -1,10 +1,12 @@
 @import "../components/reset.css";
-@import "./global.css";
 @import "../components/avatar.css";
 @import "../components/badge.css";
 @import "../components/button.css";
 @import "../components/alert.css";
 @import "../components/cards.css";
+@import "../components/image.css";
+@import "../components/input.css";
+@import "./global.css";
 
 /************** layout ****************/
 body {
@@ -65,6 +67,10 @@ body {
 .display-card > img,
 .display-card > div {
   margin: 1rem;
+}
+
+.display-card--images {
+  padding: 1rem 2rem;
 }
 
 .btn--floating {
