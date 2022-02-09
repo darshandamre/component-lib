@@ -1,0 +1,7 @@
+.rating > .rating__star {
+  color: var(--white);
+}
+
+.rating > .rating__star--yellow {
+  color: var(--yellow);
+}
