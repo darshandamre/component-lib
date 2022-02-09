@@ -13,6 +13,7 @@
 @import "../components/snackbar.css";
 @import "../components/modal.css";
 @import "../components/navigation.css";
+@import "../components/grid.css";
 @import "./global.css";
 
 /************** layout ****************/
@@ -75,6 +76,22 @@ body {
 .display-card > img,
 .display-card > div {
   margin: 1rem;
+}
+
+.display-card > .grid-col-2 > div,
+.display-card > .grid-col-3 > div,
+.display-card > .grid-col-4 > div {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primary);
+}
+
+.grid-col-2,
+.grid-col-3,
+.grid-col-4 {
+  width: 100%;
 }
 
 .display-card--images {
