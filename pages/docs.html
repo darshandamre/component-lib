@@ -1567,9 +1567,82 @@ Quis voluptate explicabo nesciunt mollitia veniam.
           </div>
         </div>
       </section>
+
+      <!-- Modal section -->
+      <section>
+        <h2 id="modal-section" class="text-lg fw-500 mt-8 mb-1">Modal</h2>
+        <p class="my-1">
+          A modal is a dialog box/popup window that is displayed on top of the
+          current page.
+        </p>
+        <div class="display-card">
+          <div class="modal__content">
+            <p class="modal__title">Modal title</p>
+            <p class="modal__text">
+              This is a modal content. Add information here related to your
+              project or whatever you want to add here.
+            </p>
+            <div class="modal__actions">
+              <button id="closeModal" class="btn btn--primary">Allow</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button id="modal-demo-btn" class="mb-4 btn btn--primary">
+            Demo
+          </button>
+          <div id="modal" class="modal">
+            <div class="modal__content">
+              <p class="modal__title">Modal title</p>
+              <p class="modal__text">
+                This is a modal content. Add information here related to your
+                project or whatever you want to add here.
+              </p>
+              <div class="modal__actions">
+                <button id="modal-close" class="btn btn--primary">Allow</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="code-snippet__wrapper mx-auto mb-5">
+          <button
+            class="btn--copy m-2"
+            value='<div id="modal" class="modal">
+  <div class="modal__content">
+    <p class="modal__title">Modal title</p>
+    <p class="modal__text">
+      This is a modal content. Add information here related to your
+      project or whatever you want to add here.
+    </p>
+    <div class="modal__actions">
+      <button id="modal-close" class="btn btn--primary">Allow</button>
+    </div>
+  </div>
+</div>'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <pre><code>&lt;div id=&quot;modal&quot; class=&quot;modal&quot;&gt;
+              &emsp;&lt;div class=&quot;modal__content&quot;&gt;
+                &emsp;&emsp;&lt;p class=&quot;modal__title&quot;&gt;Modal title&lt;/p&gt;
+                &emsp;&emsp;&lt;p class=&quot;modal__text&quot;&gt;
+                  &emsp;&emsp;&emsp;This is a modal content. Add information here related to your
+                  &emsp;&emsp;&emsp;project or whatever you want to add here.
+                &emsp;&emsp;&lt;/p&gt;
+                &emsp;&emsp;&lt;div class=&quot;modal__actions&quot;&gt;
+                  &emsp;&emsp;&emsp;&lt;button id=&quot;modal-close&quot; class=&quot;btn btn--primary&quot;&gt;Allow&lt;/button&gt;
+                &emsp;&emsp;&lt;/div&gt;
+              &emsp;&lt;/div&gt;
+            &lt;/div&gt;
+            </code></pre>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="../js/highlight.min.js"></script>
     <script src="../js/docs.js"></script>
     <script src="../js/alert.js"></script>
+    <script src="../js/modal.js"></script>
   </body>
 </html>
