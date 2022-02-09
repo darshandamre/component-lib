@@ -1,0 +1,12 @@
+.list {
+  margin: 1rem;
+}
+
+.list__item {
+  background: var(--card-bg);
+  padding: 0.5rem 1rem;
+}
+
+.list--spaced > .list__item {
+  margin-bottom: 1rem;
+}
