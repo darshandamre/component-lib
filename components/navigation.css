@@ -1,0 +1,25 @@
+.navigation {
+  width: 100%;
+  background: var(--card-bg);
+}
+
+.navigation__content {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__logo {
+  max-width: 10rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navigation__actions > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -12,6 +12,7 @@
 @import "../components/spacing.css";
 @import "../components/snackbar.css";
 @import "../components/modal.css";
+@import "../components/navigation.css";
 @import "./global.css";
 
 /************** layout ****************/
@@ -62,7 +63,8 @@ body {
 }
 
 .display-card--vertical-cards,
-.display-card--horizontal-cards {
+.display-card--horizontal-cards,
+.display-card--navigation {
   max-width: none;
 }
 

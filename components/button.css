@@ -5,6 +5,7 @@
   cursor: pointer;
   font-weight: 600;
   background: var(--btn-bg-default);
+  color: var(--white);
   font-size: 1rem;
   line-height: 1.5rem;
 }
