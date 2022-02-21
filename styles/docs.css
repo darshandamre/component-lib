@@ -1,19 +1,4 @@
-@import "../components/reset.css";
-@import "../components/avatar.css";
-@import "../components/badge.css";
-@import "../components/button.css";
-@import "../components/alert.css";
-@import "../components/cards.css";
-@import "../components/image.css";
-@import "../components/input.css";
-@import "../components/text-utils.css";
-@import "../components/lists.css";
-@import "../components/rating.css";
-@import "../components/spacing.css";
-@import "../components/snackbar.css";
-@import "../components/modal.css";
-@import "../components/navigation.css";
-@import "../components/grid.css";
+@import "../components/main.css";
 @import "./global.css";
 
 /************** layout ****************/
@@ -32,6 +17,16 @@ body {
 
 .sidebar {
   grid-area: sidebar;
+  border-right: 3px solid var(--card-bg);
+  min-width: 15rem;
+  height: calc(100vh - 6rem);
+  position: sticky;
+  top: 5.5rem;
+  overflow-y: auto;
+}
+
+.sidebar li {
+  margin: 0.5rem 0;
 }
 
 .main {
@@ -41,8 +36,6 @@ body {
 /*********** text ****************/
 .text-highlight {
   color: var(--yellow-code);
-  /* color: #a6ce28; */
-  /* color: #9c73ff; */
 }
 
 /******** component displays *********/

@@ -19,31 +19,29 @@
     ></script>
   </head>
   <body>
-    <header class="header width-90 mx-auto py-2">
-      <a href="/" class="logo"
-        ><img src="../assets/52-designs-logo-500.svg" alt="52 designs"
-      /></a>
-      <nav class="header__nav">
-        <ul>
-          <li class="ml-3"><a href="./pages/docs.html">Docs</a></li>
-          <li class="ml-3">
-            <a
-              href="https://github.com/darshandamre/component-lib"
-              target="_blank"
-            >
-              <i class="fab fa-github pl-3"></i>
-            </a>
-          </li>
-          <li class="ml-2">
-            <button class="light-mode">
-              <i class="fas fa-sun"></i>
-            </button>
-          </li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__content width-90 mx-auto py-2">
+        <a href="/" class="logo"
+          ><img src="../assets/52-designs-logo-500.svg" alt="52 designs"
+        /></a>
+        <nav class="header__nav">
+          <ul>
+            <li class="ml-3"><a href="/">Home</a></li>
+            <li class="ml-3">
+              <a
+                href="https://github.com/darshandamre/component-lib"
+                target="_blank"
+              >
+                <i class="fab fa-github pl-3"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <aside class="sidebar text-base pl-3">
-      <h3 class="text-md">Components</h3>
+      <h3 class="text-md"><a href="#installation">Installation</a></h3>
+      <h3 class="text-md"><a href="#avatar">Components</a></h3>
       <ul>
         <li><a href="#avatar">Avatar</a></li>
         <li><a href="#alert">Alert</a></li>
@@ -62,6 +60,23 @@
       </ul>
     </aside>
     <main class="main text-base width-80 mx-auto mb-5">
+      <section>
+        <h2 id="installation" class="text-lg fw-500 mt-2 mb-1">Installation</h2>
+        <p class="my-1">
+          Copy the following html and paste it in the head tag of the html page.
+        </p>
+        <div class="code-snippet__wrapper mx-auto my-5">
+          <button
+            class="btn--copy m-2"
+            value='<link rel="stylesheet" href="https://52designs.vercel.app/components/main.css" />'
+          >
+            <i class="far fa-copy"></i>
+          </button>
+          <div class="code-snippet">
+            <pre><code>&lt;link rel="stylesheet" href="https://52designs.vercel.app/components/main.css" /></code></pre>
+          </div>
+        </div>
+      </section>
       <!-- Avatar section -->
       <section>
         <h2 id="avatar" class="text-lg fw-500 mt-2 mb-1">Avatar</h2>
