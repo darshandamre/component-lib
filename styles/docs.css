@@ -32,6 +32,16 @@ body {
 
 .sidebar {
   grid-area: sidebar;
+  border-right: 3px solid var(--card-bg);
+  min-width: 15rem;
+  height: calc(100vh - 6rem);
+  position: sticky;
+  top: 5.5rem;
+  overflow-y: auto;
+}
+
+.sidebar li {
+  margin: 0.5rem 0;
 }
 
 .main {
@@ -41,8 +51,6 @@ body {
 /*********** text ****************/
 .text-highlight {
   color: var(--yellow-code);
-  /* color: #a6ce28; */
-  /* color: #9c73ff; */
 }
 
 /******** component displays *********/
