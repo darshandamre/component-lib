@@ -1,12 +1,14 @@
-// js for highlightjs
+const copyBtnList = document.querySelectorAll(".btn--copy");
+const sideBarLinks = document.querySelectorAll(".sidebar a");
+
+// highlightjs configuration
 hljs.configure({
   languages: ["html"],
   cssSelector: "pre > code"
 });
 hljs.highlightAll();
 
-const copyBtnList = document.querySelectorAll(".btn--copy");
-
+// copy button listeners
 copyBtnList.forEach(copyBtn => {
   const value = copyBtn.getAttribute("value");
   copyBtn.addEventListener("click", () => {
@@ -15,8 +17,6 @@ copyBtnList.forEach(copyBtn => {
 });
 
 // scroll behaviour
-const sideBarLinks = document.querySelectorAll(".sidebar a");
-
 sideBarLinks.forEach(link => {
   link.addEventListener("click", e => {
     e.preventDefault();
