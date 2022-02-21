@@ -13,3 +13,15 @@ copyBtnList.forEach(copyBtn => {
     navigator.clipboard.writeText(value);
   });
 });
+
+// scroll behaviour
+const sideBarLinks = document.querySelectorAll(".sidebar a");
+
+sideBarLinks.forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    const offSet = document.querySelector(link.getAttribute("href")).offsetTop;
+    const scrollTo = offSet - document.querySelector(".header").offsetHeight;
+    window.scrollTo(0, scrollTo);
+  });
+});
