@@ -1,7 +1,4 @@
-@import "../components/reset.css";
 @import "./global.css";
-@import "../components/text-utils.css";
-@import "../components/spacing.css";
 
 .container {
   max-width: 120rem;
@@ -50,6 +47,7 @@
 
 .btn--outline {
   border: 2px solid var(--primary);
+  background-color: inherit;
 }
 
 /* larger than 640px */
